@@ -16,11 +16,11 @@ const start = async (): Promise<void> => {
 
     // 3. Start Express
     app.listen(PORT, () => {
-      console.log(` EduReach Server is running!`);
-      console.log(` URL: http://localhost:${PORT}`);
-      console.log(` Node: ${process.version}`);
-      console.log(` Press Ctrl+C to stop`);
-    });
+  console.log(`EduReach Server is running!`);
+  console.log(`Port: ${PORT}`);
+  console.log(`Node: ${process.version}`);
+  console.log(`Press Ctrl+C to stop`);
+});
   } catch (error) {
     console.error("Failed to start server:", error);
     process.exit(1);
